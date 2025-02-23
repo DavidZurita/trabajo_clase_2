@@ -24,8 +24,57 @@ PostgreSQL, con su extensión pgvector, se ha posicionado como una opción sóli
         pgvector es una extensión de código abierto para PostgreSQL que añade soporte para almacenar y consultar datos vectoriales.
         Permite crear tablas con columnas de tipo vector, así como índices para acelerar las búsquedas por similitud.
         pgvector admite diferentes algoritmos de búsqueda por similitud, como la búsqueda del vecino más cercano aproximado (ANN), que permite realizar búsquedas eficientes en conjuntos de datos de gran tamaño.
+        
+        Pasos para implementar una base de datis vectorial
+            1. Instalación y Configuración:
+            Instalar PostgreSQL:
+            Asegúrate de tener PostgreSQL instalado en tu sistema. Puedes descargar la versión más reciente desde el sitio web oficial de PostgreSQL.
+                Instalar la extensión pgvector:
+                    pgvector es una extensión que debes agregar a tu base de datos PostgreSQL.
+                    Dependiendo de tu sistema operativo, puedes instalarla a través de gestores de paquetes o compilando desde el código fuente.
+                    Una vez instalada, debes habilitar la extensión en tu base de datos con el siguiente comando.
+                    SQL:
+                        CREATE EXTENSION vector;
 
-    
+            2. Creación de la Tabla:
+                Definir la columna de vectores:
+                Crea una tabla que incluya una columna para almacenar los vectores.
+                Utiliza el tipo de dato vector para esta columna, especificando la dimensión de los vectores.
+                SQL:
+                    CREATE TABLE documentos 
+                    id SERIAL PRIMARY KEY,
+                    contenido TEXT,
+                    embedding vector(1536) -- Ejemplo de dimensión 1536
+
+            3. Generación de Vectores (Embeddings):
+                Utilizar modelos de embeddings:
+                Necesitarás un modelo de machine learning para convertir tus datos (texto, imágenes, etc.) en vectores.
+                Modelos populares incluyen los de OpenAI (como text-embedding-ada-002) o modelos de código abierto como Sentence Transformers.
+                Genera los vectores fuera de PostgreSQL y luego insértalos en la tabla.
+            
+            4. Inserción de Vectores:
+
+                Insertar datos en la tabla:
+                Una vez que tengas los vectores generados, insértalos en la tabla junto con los datos originales.
+                SQL:
+                INSERT INTO documentos (contenido, embedding) VALUES ('Texto de ejemplo', '[0.1, 0.2, ..., 0.n]');
+             
+            5. Creación de Índices:
+
+                Crear índices para búsqueda eficiente:
+                Para acelerar las búsquedas por similitud, es crucial crear índices en la columna de vectores.
+                pgvector ofrece diferentes tipos de índices, como HNSW (Hierarchical Navigable Small World).
+                SQL:
+                    CREATE INDEX ON documentos USING hnsw (embedding vector_cosine_ops);
+            
+            6. Consultas de Búsqueda por Similitud:
+               
+                Realizar consultas SQL:
+                Utiliza consultas SQL con funciones de pgvector para encontrar los vectores más similares a un vector de consulta.
+                Puedes utilizar operadores como <-> (distancia euclidiana), <#> (distancia del coseno) o <=> (producto interno).
+                SQL:
+                    SELECT contenido FROM documentos ORDER BY embedding <=> '[0.1, 0.2, ..., 0.n]' LIMIT 5;
+   
     Ventajas de usar PostgreSQL con pgvector:
 
         Integración con una base de datos relacional, ewl cual permite combinar la búsqueda vectorial con las consultas SQL tradicionales.
