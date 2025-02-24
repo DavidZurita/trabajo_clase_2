@@ -18,7 +18,14 @@ PostgreSQL, con su extensión pgvector, se ha posicionado como una opción sóli
         Recuperar información relevante de grandes conjuntos de datos, como bases de datos de conocimiento o repositorios de documentos.
         Mejorar la capacidad de los chatbots para comprender y responder a las consultas de los usuarios.
         Análisis de imágenes y vídeos
+    
+    Ventajas de usar PostgreSQL con pgvector:
 
+        Integración con una base de datos relacional, ewl cual permite combinar la búsqueda vectorial con las consultas SQL tradicionales.
+        Es una base de datos robusta y ampliamente utilizada, con una gran comunidad y un amplio conjunto de herramientas.
+        Con la extencion pgvector admite diferentes algoritmos de búsqueda y tipos de datos vectoriales, lo que permite adaptarlo a diferentes necesidades.
+        pgvector es una extensión de código abierto, lo que permite utilizarla y modificarla libremente.
+    
     Implementación en PostgreSQL con pgvector:
 
         pgvector es una extensión de código abierto para PostgreSQL que añade soporte para almacenar y consultar datos vectoriales.
@@ -76,10 +83,14 @@ PostgreSQL, con su extensión pgvector, se ha posicionado como una opción sóli
                     SELECT contenido FROM documentos ORDER BY embedding <=> '[0.1, 0.2, ..., 0.n]' LIMIT 5;
    
 
-        Integración con una base de datos relacional, ewl cual permite combinar la búsqueda vectorial con las consultas SQL tradicionales.
-        Es una base de datos robusta y ampliamente utilizada, con una gran comunidad y un amplio conjunto de herramientas.
-        Con la extencion pgvector admite diferentes algoritmos de búsqueda y tipos de datos vectoriales, lo que permite adaptarlo a diferentes necesidades.
-        pgvector es una extensión de código abierto, lo que permite utilizarla y modificarla libremente.
+
+Referencia:
+https://aws.amazon.com/es/what-is/vector-databases/
+https://cloud.google.com/discover/what-is-a-vector-database?hl=es
+https://www.ibm.com/mx-es/topics/vector-database
+https://www.elastic.co/es/what-is/vector-database
+https://www.mongodb.com/es/resources/basics/databases/vector-databases
+https://dev.mysql.com/doc/refman/9.1/en/vector-functions.html
 
 2)	Qué es y que aplicaciones tienen los Datalakes?
 
