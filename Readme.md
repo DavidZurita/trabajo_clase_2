@@ -92,9 +92,15 @@ Data Lake conserva los datos en bruto, lo que ofrece mayor flexibilidad para div
     Los Data Lakes se utilizan en una amplia variedad de industrias y casos de uso, algunos ejemplos son:
 
         Análisis de Big Data, permiten analizar grandes volúmenes de datos para obtener información valiosa sobre tendencias, patrones y relaciones.
+        
         Inteligencia Artificial y Machine Learning,sirve como base para entrenar modelos de aprendizaje automático y desarrollar aplicaciones de inteligencia artificial.
+        
         Internet de las Cosas (IoT), nos permite almacenar y analizar datos generados por dispositivos IoT, para la gestion de monitoreo y optimización de procesos.
+        
         Marketing y Ventas, nos facilitan la creación de perfiles de clientes más completos y la personalización de campañas de marketing.
+        
         Investigación y Desarrollo, Permiten a los investigadores explorar grandes conjuntos de datos para descubrir nuevos conocimientos y desarrollar nuevas tecnologías.
-        Finanzas: Se utiliza para la detección de fraudes, análisis de riesgos y cumplimiento normativo.
-        Salud: Se utiliza para la investigación médica, el análisis de datos de pacientes y la gestión de registros de salud electrónicos.
+        
+        Finanzas, su función mas avitual es la utilizacióm para la detección de fraudes, análisis de riesgos y cumplimiento normativo.
+        
+        Salud, comun mente usada para la investigación médica, el análisis de datos de pacientes y la gestión de registros de salud electrónicos.
