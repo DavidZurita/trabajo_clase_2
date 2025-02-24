@@ -75,7 +75,6 @@ PostgreSQL, con su extensión pgvector, se ha posicionado como una opción sóli
                 SQL:
                     SELECT contenido FROM documentos ORDER BY embedding <=> '[0.1, 0.2, ..., 0.n]' LIMIT 5;
    
-    Ventajas de usar PostgreSQL con pgvector:
 
         Integración con una base de datos relacional, ewl cual permite combinar la búsqueda vectorial con las consultas SQL tradicionales.
         Es una base de datos robusta y ampliamente utilizada, con una gran comunidad y un amplio conjunto de herramientas.
