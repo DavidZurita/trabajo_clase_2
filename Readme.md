@@ -84,4 +84,17 @@ PostgreSQL, con su extensión pgvector, se ha posicionado como una opción sóli
 
 2)	Qué es y que aplicaciones tienen los Datalakes?
 
+Un Data Lake es un repositorio centralizado que permite almacenar grandes volúmenes de datos estructurados, semiestructurados y no estructurados, en su formato nativo, hasta que sean necesarios. 
+Data Lake conserva los datos en bruto, lo que ofrece mayor flexibilidad para diversos análisis futuros.
 
+    Aplicaciones de los Data Lakes:
+
+    Los Data Lakes se utilizan en una amplia variedad de industrias y casos de uso, algunos ejemplos son:
+
+        Análisis de Big Data, permiten analizar grandes volúmenes de datos para obtener información valiosa sobre tendencias, patrones y relaciones.
+        Inteligencia Artificial y Machine Learning,sirve como base para entrenar modelos de aprendizaje automático y desarrollar aplicaciones de inteligencia artificial.
+        Internet de las Cosas (IoT), nos permite almacenar y analizar datos generados por dispositivos IoT, para la gestion de monitoreo y optimización de procesos.
+        Marketing y Ventas, nos facilitan la creación de perfiles de clientes más completos y la personalización de campañas de marketing.
+        Investigación y Desarrollo, Permiten a los investigadores explorar grandes conjuntos de datos para descubrir nuevos conocimientos y desarrollar nuevas tecnologías.
+        Finanzas: Se utiliza para la detección de fraudes, análisis de riesgos y cumplimiento normativo.
+        Salud: Se utiliza para la investigación médica, el análisis de datos de pacientes y la gestión de registros de salud electrónicos.
