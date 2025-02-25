@@ -18,14 +18,7 @@ PostgreSQL, con su extensión pgvector, se ha posicionado como una opción sóli
         Recuperar información relevante de grandes conjuntos de datos, como bases de datos de conocimiento o repositorios de documentos.
         Mejorar la capacidad de los chatbots para comprender y responder a las consultas de los usuarios.
         Análisis de imágenes y vídeos
-    
-    Ventajas de usar PostgreSQL con pgvector:
 
-        Integración con una base de datos relacional, ewl cual permite combinar la búsqueda vectorial con las consultas SQL tradicionales.
-        Es una base de datos robusta y ampliamente utilizada, con una gran comunidad y un amplio conjunto de herramientas.
-        Con la extencion pgvector admite diferentes algoritmos de búsqueda y tipos de datos vectoriales, lo que permite adaptarlo a diferentes necesidades.
-        pgvector es una extensión de código abierto, lo que permite utilizarla y modificarla libremente.
-    
     Implementación en PostgreSQL con pgvector:
 
         pgvector es una extensión de código abierto para PostgreSQL que añade soporte para almacenar y consultar datos vectoriales.
@@ -82,6 +75,12 @@ PostgreSQL, con su extensión pgvector, se ha posicionado como una opción sóli
                 SQL:
                     SELECT contenido FROM documentos ORDER BY embedding <=> '[0.1, 0.2, ..., 0.n]' LIMIT 5;
    
+    Ventajas de usar PostgreSQL con pgvector:
+
+        Integración con una base de datos relacional, ewl cual permite combinar la búsqueda vectorial con las consultas SQL tradicionales.
+        Es una base de datos robusta y ampliamente utilizada, con una gran comunidad y un amplio conjunto de herramientas.
+        Con la extencion pgvector admite diferentes algoritmos de búsqueda y tipos de datos vectoriales, lo que permite adaptarlo a diferentes necesidades.
+        pgvector es una extensión de código abierto, lo que permite utilizarla y modificarla libremente.
 
 2)	Qué es y que aplicaciones tienen los Datalakes?
 
@@ -105,20 +104,3 @@ Data Lake conserva los datos en bruto, lo que ofrece mayor flexibilidad para div
         Finanzas, su función mas avitual es la utilizacióm para la detección de fraudes, análisis de riesgos y cumplimiento normativo.
         
         Salud, comun mente usada para la investigación médica, el análisis de datos de pacientes y la gestión de registros de salud electrónicos.
-
-Referencia 1):
-
-https://aws.amazon.com/es/what-is/vector-databases/
-https://cloud.google.com/discover/what-is-a-vector-database?hl=es
-https://www.ibm.com/mx-es/topics/vector-database
-https://www.elastic.co/es/what-is/vector-database
-https://www.mongodb.com/es/resources/basics/databases/vector-databases
-https://dev.mysql.com/doc/refman/9.1/en/vector-functions.html
-https://airbyte.com/data-engineering-resources/postgresql-as-a-vector-database
-
-Referencia 2):
-https://azure.microsoft.com/es-mx/products/data-lake-analytics/?&ef_id=_k_Cj0KCQiAq-u9BhCjARIsANLj-s31ejQeFmybApkD1TkIpVcofBV9mmisFSggz-GMoccp_9KDw7wksa4aAvyDEALw_wcB_k_&OCID=AIDcmmvcssag76_SEM__k_Cj0KCQiAq-u9BhCjARIsANLj-s31ejQeFmybApkD1TkIpVcofBV9mmisFSggz-GMoccp_9KDw7wksa4aAvyDEALw_wcB_k_&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s31ejQeFmybApkD1TkIpVcofBV9mmisFSggz-GMoccp_9KDw7wksa4aAvyDEALw_wcB
-https://www.datacamp.com/blog/data-lakes-vs-data-warehouses?utm_source=google&utm_medium=paid_search&utm_campaignid=21057859163&utm_adgroupid=157296745417&utm_device=c&utm_keyword=&utm_matchtype=&utm_network=g&utm_adpostion=&utm_creative=692112538978&utm_targetid=aud-1685385913382:dsa-2222697811118&utm_loc_interest_ms=&utm_loc_physical_ms=9197939&utm_content=DSA~blog~Data-Engineering&utm_campaign=230119_1-sea~dsa~tofu_2-b2c_3-latam-en_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na-aifawfeb25&gad_source=1&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s0jUKaX2QkO2f2ENc_i2CmmQLnyw7_PKTmynj28QB2pQbtsJXtcoVUaAqu3EALw_wcB
-https://cloud.google.com/learn/what-is-a-data-lake?hl=es-419
-https://www.ibm.com/es-es/topics/data-lake
-https://aws.amazon.com/es/big-data/datalakes-and-analytics/datalakes/
